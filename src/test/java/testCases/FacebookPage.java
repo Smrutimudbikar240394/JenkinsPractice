@@ -16,6 +16,7 @@ public class FacebookPage
 		driver.get("https://www.facebook.com");
 		System.out.println("**************Maven Run************");
 		System.out.println("Webhook Triggered Successfully");
+		System.out.println("Facebook Page Opened Successfully");
 	}
 
 }
