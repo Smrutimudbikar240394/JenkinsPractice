@@ -15,6 +15,7 @@ public class FacebookPage
 		WebDriver driver=new ChromeDriver();
 		driver.get("https://www.facebook.com");
 		System.out.println("**************Maven Run************");
+		System.out.println("Webhook Triggered Successfully");
 	}
 
 }
