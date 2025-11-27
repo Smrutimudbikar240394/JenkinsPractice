@@ -14,23 +14,24 @@ pipeline {
         stage('Build') {
             steps {
                 echo "Build Stage: Running build steps..."
-                // Add build commands here, example:
-                sh 'mvn clean install'
+                // Example Windows commands:
+                 bat 'mvn clean install'
+                bat 'echo Build completed'
             }
         }
 
         stage('Test') {
             steps {
                 echo "Test Stage: Running test steps..."
-                // Add test commands here, example:
-                sh 'mvn test'
+             bat 'mvn test'
+                bat 'echo Tests executed'
             }
         }
 
         stage('Deploy') {
             steps {
-                echo "Deploy Stage: Running deployment steps..."
-                // Add deploy commands here
+                echo "Deploy Stage..."
+                bat 'echo Deployment completed'
             }
         }
     }
